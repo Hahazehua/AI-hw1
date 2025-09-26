@@ -1,0 +1,8 @@
+git clone https://github.com/krishnaik06/Complete-Langchain-Tutorials.git
+cd Complete-Langchain-Tutorials/Blog_Generation
+conda create -n llm_env python=3.10
+conda activate llm_env
+pip install -r requirements.txt
+pip install huggingface-hub
+huggingface-cli download TheBloke/Llama-2-7B-Chat-GGUF llama-2-7b-chat.Q2_K.gguf --local-dir . --local-dir-use-symlinks False
+python p2211029_p2202902.py
